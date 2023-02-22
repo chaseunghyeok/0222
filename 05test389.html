@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 05test389.html </title>
+<style>
+  *{font-size: 16pt;}
+</style>
+
+<script>
+ var city = [ '서울', '부산', '제주', '전주', '인천' ];
+
+    city.pop();
+    city.forEach(function(value, index){
+        document.write(index , ' 번째 ', value, '<br>');
+    }); document.write('<p>');
+
+    //문제 구로 데이터추가
+    city.reverse();
+    city.unshift('여수');
+    city.forEach(function(value, index){
+        document.write(index , ' 번째 ', value, '<br>');
+    }); document.write('<p>');
+
+</script>
+</head>
+<body>
+    
+    <h2> 05test389.html </h2>
+</body>
+</html>

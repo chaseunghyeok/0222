@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function book(){
+        var title = '문학산'; //지역범위
+        return title ; // 다른 function으로 내보낼때
+    }//end
+
+    function discount(){
+        var dc=1500; //지역범위
+        return dc ;
+    }//end
+
+    function note(){
+        var retA = book(); //다른 기억된 function값 가지고오는 변수값
+        var retB = discount();  
+        document.write('<h2>note함수', '<br>');
+        document.write('산이름 ', retA , '<br>');//변수로 받으면 조건을 쓸수있음
+        document.write('산이름 ', book() , '<hr>')// 조건 사용 X
+        document.write('할인율 ', retB , '<br>');
+        document.write('할인율 ', discount() , '</h2>');
+    }//end
+</script>
+<body>
+    <h2>11testfunction</h2>
+    <button onclick="note()">note함수호출</button>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08testrandom</title>
+<style>
+  *{font-size: 16pt;}
+</style>
+
+<script>
+    //배열이용
+    // document.write('.random()결과 ', Math.random() ,'<p>');
+    // for(){ } while(){ } Math.random(), Math.ceil()
+    // 1~45사이 6개 발생 배열 
+    var lotto = [];
+    while(lotto.length<6){
+        var num = Math.floor(Math.random()*45 )+1 ;
+        if(lotto.indexOf(num)<0){lotto.push(num);}  
+        //--> indexOf 글자가있는지 없는지 확인해주는 384page | 01test388 확인
+        // {lotto.push(num);} // -->이것만 사용시 중복
+    }
+    lotto.sort(function(a,b){return a-b;});
+    for(var k=0; k<6; k++){
+    document.write(lotto[k],'  '); 
+    }
+</script>
+</head>
+<body>
+    
+    <h2> 08testrandom.html </h2>
+</body>
+</html>

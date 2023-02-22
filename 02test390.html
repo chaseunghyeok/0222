@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 02test390.html </title>
+<style>
+  *{font-size: 16pt;}
+</style>
+
+<script>
+ var info = [ 45, 11 , 7, 32, 20, 19 ];
+ //for
+ for(var k=0; k<info.length; k++){
+    document.write( info[k], '  ');
+ }
+  document.write('<p>sort처리 데이터출력<p>');
+  //사전이 좋은점 a~z ㄱ~ㅎ  오름sort
+  info.sort( function(a,b){return a-b;} );  // (a,b)는 매개변수
+  document.write( info.toString(),'<br>');
+  document.write('<p>'); // -->문자열처럼 만든다.
+
+
+var data = info.toString();
+document.write(data, '<br>');
+document.write(data.replaceAll(',', ' '));
+</script>
+</head>
+<body>
+    
+    <h2> 02test390.html </h2>
+</body>
+</html>

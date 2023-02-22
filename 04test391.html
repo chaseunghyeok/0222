@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 04test391.html </title>
+<style>
+  *{font-size: 16pt;}
+</style>
+
+<script>
+ var city = [ '서울', '부산', '제주', '전주', '인천' ];
+ //for
+ for(var k=0; k<city.length; k=k+1){
+    document.write( city[k], '  '); 
+ }
+ 
+ document.write('<p>');
+ for(var i in city){ 
+    document.write( i, '   ');  
+    // document.write( city[i], '   '); // 도시이름으로 나옴
+ }
+ 
+ document.write('<p>');
+ for(var j of city){
+    document.write( j, '   ');  
+ }
+ 
+ document.write('<p>');
+    city.forEach(function(value, index, array){
+        document.write(index , ' 번째 ', value, '<br>');
+    }); 
+ 
+
+ document.write('<p>');
+ var num = [7, 8, 9];
+ num.forEach(function(value, index){
+    document.write(index, ' ', value,'<br>')
+ });
+</script>
+</head>
+<body>
+    
+    <h2> 04test391.html </h2>
+</body>
+</html>
